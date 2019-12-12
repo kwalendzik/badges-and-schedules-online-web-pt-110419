@@ -12,7 +12,7 @@ end
 
 def printer(attendees)
   attendees.each do |name, index|
-  puts batch_badge_creator(attendees)
-  puts assign_rooms(attendees)
+  puts batch_badge_creator(attendees).join
+  puts assign_rooms(attendees).join
   end
 end
